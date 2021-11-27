@@ -14,7 +14,7 @@ app.post('/saveTestimonialDetail', async (req, res) => {
                     if (err)
                         res.status(400).send(err);
                     console.log(err, user)
-                    res.json({ status: true, message: 'Testimonial created successfully' });
+                    res.json({ status: true, message: 'Testimonial updated successfully' });
                 });
             } else {
                 TestimonialModel.insertTestimonialData(req.body, (err, user) => {
