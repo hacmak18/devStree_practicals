@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "f3bea33f-1b71-4f35-8f0a-91ec9b476558",
+		"name": "testimonials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "photo",
+							"value": "author-4.jpg",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Fajar Siddiq",
+							"type": "text"
+						},
+						{
+							"key": "post",
+							"value": "CEO, MakerFlix",
+							"type": "text"
+						},
+						{
+							"key": "testimonialDescription",
+							"value": "Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/testimonial/saveTestimonialDetail",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testimonial",
+						"saveTestimonialDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/testimonial/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testimonial",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "photo",
+							"value": "author-4.jpg",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Fajar Siddi",
+							"type": "text"
+						},
+						{
+							"key": "post",
+							"value": "CEO, MakerFlix",
+							"type": "text"
+						},
+						{
+							"key": "testimonialDescription",
+							"value": "Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed! Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/testimonial/saveTestimonialDetail",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testimonial",
+						"saveTestimonialDetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all testimonials",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/testimonial/getAllTestimonial",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testimonial",
+						"getAllTestimonial"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
